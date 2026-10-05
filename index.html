@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafiz Achmad Ramdani | Software Engineer & IT Educator</title>
+  <meta name="description" content="Official portfolio of Hafiz Achmad Ramdani - Software Engineer, Municipal Applications Programmer at Dishubkominfo, and Certified IT Educator.">
+  <meta name="author" content="Hafiz Achmad Ramdani">
+  <meta property="og:title" content="Hafiz Achmad Ramdani - Software Engineer & IT Educator">
+  <meta property="og:description" content="Full-stack web engineer, municipal digital governance programmer at Dishubkominfo, and certified IT educator.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Hafiz Achmad Ramdani Home">
+        <img src="assets/images/hafiz-profile.jpg" alt="Hafiz Achmad" class="brand-avatar">
+        <span>Hafiz <span class="gradient-text">Achmad</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="#experience" class="nav-link" data-i18n="navExperience">Experience</a>
+        <a href="#projects" class="nav-link" data-i18n="navProjects">Projects</a>
+        <a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+        <a href="#credentials" class="nav-link" data-i18n="navCredentials">Credentials</a>
+        <a href="#speaking" class="nav-link" data-i18n="navSpeaking">Speaking</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="lang-btn" id="lang-toggle" title="Switch Language (ID/EN)">
+          <i class="fas fa-globe"></i> <span id="lang-label">ID</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+
+        <!-- Print Resume Button -->
+        <button class="icon-btn" onclick="window.print()" title="Print or Save Resume as PDF">
+          <i class="fas fa-print"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary" style="padding: 0.55rem 1.15rem; font-size: 0.86rem;" data-i18n="btnLetsTalk">
+          <i class="fas fa-paper-plane"></i> Let's Talk
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="heroPill">Available for Technical Projects & Speaking</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="heroTitle">
+            Architecting <span class="gradient-text">Public Tech</span> & Mentoring Future Engineers.
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Software Engineer and IT Educator with an Informatics background. Proven expertise in engineering municipal public portals, scaling educational ERP platforms, and building intelligent IoT solutions.
+          </p>
+
+          <div class="hero-location-role">
+            <div class="hero-meta-item">
+              <i class="fas fa-briefcase"></i>
+              <span data-i18n="roleMunicipal">Public Service Programmer @ <strong>Dishubkominfo</strong></span>
+            </div>
+            <div class="hero-meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Tasikmalaya, West Java, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" data-i18n="btnExplore">
+              <i class="fas fa-th-large"></i> Explore Projects
+            </a>
+            <a href="CV_Hafiz_Achmad_Ramdani_ENG.docx" download class="btn btn-secondary" title="Download Official CV" data-i18n="btnDownloadCV">
+              <i class="fas fa-file-download"></i> Download CV (Word)
+            </a>
+            <a href="Hafiz_Achmad_porto_eng.pdf" target="_blank" class="btn btn-outline" title="View Portfolio PDF" data-i18n="btnPortfolioPdf">
+              <i class="fas fa-file-pdf"></i> Portfolio PDF
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/hafiz162001" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/hafizahmadr" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:hafizachmadr@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6282318107081" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Contact" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-visual-glow"></div>
+          <div class="hero-terminal-card">
+            <!-- Window Title Bar -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+              </div>
+              <div class="terminal-tab">
+                <i class="fas fa-file-code"></i> engineer.config.ts
+              </div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">TypeScript</div>
+            </div>
+
+            <!-- Profile Identity Strip (with sharp compact 52px retina avatar & verified badge) -->
+            <div class="terminal-user-strip">
+              <div class="terminal-avatar-wrap">
+                <img src="assets/images/hafiz-profile-enhanced.jpg" alt="Hafiz Achmad Ramdani" class="terminal-avatar-img">
+                <span class="terminal-verified-badge" title="Verified Informatics Graduate"><i class="fas fa-check"></i></span>
+              </div>
+              <div class="terminal-user-info">
+                <h4>Hafiz Achmad Ramdani, S.Kom.</h4>
+                <div class="terminal-user-role">Software Engineer & IT Educator</div>
+              </div>
+              <div class="terminal-live-tag">
+                <span class="pulse-dot" style="width: 7px; height: 7px;"></span> Dishubkominfo
+              </div>
+            </div>
+
+            <!-- Code Sandbox Body -->
+            <div class="terminal-code-body">
+              <div class="code-line"><span class="code-ln">1</span><span class="code-kw">const</span> <span class="code-var">engineer</span> = {</div>
+              <div class="code-line"><span class="code-ln">2</span>&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-str">'Hafiz Achmad Ramdani'</span>,</div>
+              <div class="code-line"><span class="code-ln">3</span>&nbsp;&nbsp;<span class="code-prop">role</span>: <span class="code-str">'Public Service Programmer'</span>,</div>
+              <div class="code-line"><span class="code-ln">4</span>&nbsp;&nbsp;<span class="code-prop">office</span>: <span class="code-str">'Dishubkominfo Tasikmalaya'</span>,</div>
+              <div class="code-line"><span class="code-ln">5</span>&nbsp;&nbsp;<span class="code-prop">education</span>: <span class="code-str">'S.Kom (Honors - GPA 3.70)'</span>,</div>
+              <div class="code-line"><span class="code-ln">6</span>&nbsp;&nbsp;<span class="code-prop">copyright</span>: <span class="code-str">'SIKIPAS (Registered HAKI)'</span>,</div>
+              <div class="code-line"><span class="code-ln">7</span>&nbsp;&nbsp;<span class="code-prop">coreStack</span>: [<span class="code-str">'Laravel'</span>, <span class="code-str">'Filament'</span>, <span class="code-str">'Next.js'</span>, <span class="code-str">'Spring'</span>, <span class="code-str">'IoT'</span>],</div>
+              <div class="code-line"><span class="code-ln">8</span>&nbsp;&nbsp;<span class="code-prop">uptimeSLA</span>: <span class="code-num">0.999</span> <span class="code-comment">/* 99.9% availability */</span>,</div>
+              <div class="code-line"><span class="code-ln">9</span>&nbsp;&nbsp;<span class="code-prop">mentored</span>: <span class="code-num">100</span> <span class="code-comment">/* vocational students */</span></div>
+              <div class="code-line"><span class="code-ln">10</span>};</div>
+            </div>
+
+            <!-- Terminal Interactive Footer -->
+            <div class="terminal-footer-bar">
+              <span><i class="fas fa-terminal"></i> ts-node engineer.config.ts</span>
+              <button class="btn-terminal-exec" id="btn-run-code" title="Run code execution">
+                <i class="fas fa-play"></i> Run Code
+              </button>
+            </div>
+            <div class="terminal-exec-output" id="terminal-output">
+              <i class="fas fa-check-circle"></i> [SUCCESS]: Status 200 OK • 99.9% SLA Online • Municipal Systems Ready.
+            </div>
+
+            <!-- Mini Stats Row -->
+            <div class="hero-card-stats">
+              <div class="mini-stat-card">
+                <div class="mini-stat-val">3.70 / 4.00</div>
+                <div class="mini-stat-lbl">Cumulative GPA</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val">99.9%</div>
+                <div class="mini-stat-lbl">Municipal Portal Uptime</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val">100+</div>
+                <div class="mini-stat-lbl">Vocational Mentees</div>
+              </div>
+              <div class="mini-stat-card">
+                <div class="mini-stat-val">HAKI</div>
+                <div class="mini-stat-lbl">Registered Copyright</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Strip (Animated Counters) -->
+    <section class="stats-strip" aria-label="Key Achievements">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="3.70" data-format="3.70">3.70</div>
+          <div class="stat-label">Informatics GPA (Honors)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10000" data-format="10,000+">10,000+</div>
+          <div class="stat-label">Users Served Across Systems</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-format="100+">100+</div>
+          <div class="stat-label">Students Trained (SMK PK)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="3" data-format="Top 3">Top 3</div>
+          <div class="stat-label">National Software Dev Finalist</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Background & Vision</span>
+          <h2 class="section-title">Bridging <span class="gradient-text">Software Engineering</span> & Digital Education</h2>
+          <p class="section-desc">
+            Passionate about building scalable digital infrastructure for the public sector, creating IoT solutions for real-world impact, and empowering the next generation of technologists.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a Bachelor of Informatics Engineering (S.Kom.) graduate from <strong>Universitas Mayasari Bakti</strong>, graduating with Honors (Predikat Pujian) with a cumulative GPA of 3.70/4.00. Throughout my academic and professional career, I have dedicated myself to engineering solutions that solve practical problems—ranging from municipal public administration systems to agricultural IoT automation.
+            </p>
+            <p>
+              Currently, I serve as a <strong>Public Service Web & Application Programmer</strong> at the <em>Department of Transportation, Communication & Informatics (Dishubkominfo)</em> in Tasikmalaya, spearheading municipal software portals, high-security administrative panels with Laravel and Filament, and inter-agency RESTful APIs with 99.9% uptime.
+            </p>
+            <p>
+              Beyond engineering, I am a dedicated educator. I have trained more than 100 vocational students under the Ministry of Education’s Center of Excellence (SMK PK) initiative at BISA AI and taught Computer & Network Engineering at SMK Singaparna, aligning academic curricula with real-world tech industry demands.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-icon"><i class="fas fa-server"></i></div>
+                <h4>High-Availability Architecture</h4>
+                <p>Architecting secure, scalable municipal backends, database schema optimizations, and automated caching.</p>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-icon"><i class="fas fa-microchip"></i></div>
+                <h4>Applied IoT & Edge Hardware</h4>
+                <p>Deploying smart sensor nodes, microcontrollers (ESP32/ESP8266), and telematics GPS integrations.</p>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h4>Technical Mentorship</h4>
+                <p>Formulating curricula, mentoring capstone projects, and examining vocational competency tests (UKK/UJIKOM).</p>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+                <h4>Security & Quality Assurance</h4>
+                <p>Penetration testing fundamentals, API auditing, test automation with Playwright/Jest, and agile collaboration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="education-card">
+              <div class="edu-header">
+                <div class="edu-badge-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h3 class="edu-degree">Bachelor of Informatics Engineering (S.Kom.)</h3>
+                  <div class="edu-school">Universitas Mayasari Bakti</div>
+                  <div class="edu-meta">Tasikmalaya, Indonesia • Aug 2020 – Jun 2024</div>
+                </div>
+              </div>
+
+              <div class="gpa-pill">
+                <i class="fas fa-star"></i> Cumulative GPA: <strong>3.70 / 4.00</strong> (Graduated with Honors)
+              </div>
+
+              <div class="edu-courses-title">Core Academic Coursework</div>
+              <div class="course-tags">
+                <span class="course-tag">Algorithms & Data Structures</span>
+                <span class="course-tag">Object-Oriented Programming (OOP)</span>
+                <span class="course-tag">Web Application Engineering</span>
+                <span class="course-tag">Database Systems & Optimization</span>
+                <span class="course-tag">Human-Computer Interaction (HCI)</span>
+                <span class="course-tag">Software Engineering & Agile</span>
+                <span class="course-tag">Computer Networks & Cybersecurity</span>
+              </div>
+
+              <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
+                <div class="edu-courses-title">Leadership & Campus Service</div>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+                  <strong>Head of Department (2022–2023)</strong> – Informatics Student Association (HIMA TI). Directed departmental annual programs, community workshops, and student technical capacity development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section" id="experience" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Career Trajectory</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Work Experience</span></h2>
+          <p class="section-desc">
+            A demonstrated track record of public sector software delivery, enterprise EdTech platforms, and vocational technical education.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Dishubkominfo -->
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Public Service Web & Application Programmer</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-landmark"></i> Dishubkominfo (Dept. of Transportation, Communication & Informatics)
+                  </div>
+                </div>
+                <span class="timeline-period">Aug 2026 – Present</span>
+              </div>
+              <div class="timeline-agency-desc">
+                Regional government agency responsible for municipal digital governance, public communication infrastructure, and smart city services.
+              </div>
+              <ul class="timeline-bullets">
+                <li>Direct the architectural planning, development, and maintenance of official municipal public service portals and departmental administrative systems.</li>
+                <li>Develop high-performance backends and data administrative panels using <strong>Laravel</strong> and <strong>Filament PHP</strong> to streamline bureaucratic workflows.</li>
+                <li>Design and integrate secure RESTful APIs facilitating reliable inter-agency data synchronization and citizen information delivery.</li>
+                <li>Execute database schema optimizations, legacy code refactoring, and security audits to maintain <strong>99.9% public platform availability</strong>.</li>
+                <li>Liaise directly with agency stakeholders to translate complex statutory requirements into intuitive digital software modules.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Filament PHP</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">RESTful APIs</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMK Singaparna -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Vocational High School Teacher (Computer & Network Engineering)</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-school"></i> SMK Singaparna
+                  </div>
+                </div>
+                <span class="timeline-period">Aug 2024 – Aug 2026</span>
+              </div>
+              <div class="timeline-agency-desc">
+                Vocational educational institution preparing students with job-ready technical engineering skills.
+              </div>
+              <ul class="timeline-bullets">
+                <li>Formulated and executed lesson plans (RPP) aligned with national vocational curricula and contemporary industry standards.</li>
+                <li>Instructed core vocational subjects: Computer Networking, Hardware Maintenance, Network Operating Systems, Troubleshooting, and Cybersecurity.</li>
+                <li>Administered and evaluated official vocational skill certification assessments (UKK) to certify student technical readiness.</li>
+                <li>Liaised with business and industry partners (DU/DI) for curriculum synchronization and student industrial internship placements.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">Computer Networking</span>
+                <span class="tech-tag">Linux / Server OS</span>
+                <span class="tech-tag">Cybersecurity</span>
+                <span class="tech-tag">Hardware Diagnostics</span>
+                <span class="tech-tag">UKK Assessment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BISA AI Web Programmer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Programmer</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-building"></i> PT Bisa Artifisial Indonesia (BISA AI)
+                  </div>
+                </div>
+                <span class="timeline-period">Feb 2023 – Jun 2023</span>
+              </div>
+              <div class="timeline-agency-desc">
+                EdTech startup focused on Artificial Intelligence, Data Science, and modern applied technology training.
+              </div>
+              <ul class="timeline-bullets">
+                <li>Enhanced system usability and functionality across core administrative and academic modules of the proprietary Educational ERP (serving 10,000+ visits).</li>
+                <li>Optimized application performance through proactive bug triaging, code refactoring, and deployment workflow improvements.</li>
+                <li>Collaborated with UI/UX engineers to slice design mockups into pixel-perfect, responsive frontend components.</li>
+                <li>Evaluated user satisfaction surveys to systematically improve ERP feature adoption and workflow efficiency.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">WebRTC / Video Integration</span>
+                <span class="tech-tag">UI/UX Slicing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BISA AI Instructor -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Programming Instructor</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-chalkboard"></i> PT Bisa Artifisial Indonesia (BISA AI)
+                  </div>
+                </div>
+                <span class="timeline-period">Aug 2022 – Dec 2022</span>
+              </div>
+              <div class="timeline-agency-desc">
+                National educational initiative under the Ministry of Education's Center of Excellence (SMK PK).
+              </div>
+              <ul class="timeline-bullets">
+                <li>Curated comprehensive syllabi and lecture materials for Full Stack Web Development, Database Systems, and Software Engineering.</li>
+                <li>Instructed over 100 vocational students under the Ministry of Education's Center of Excellence (SMK PK) initiative.</li>
+                <li>Mentored students through capstone programming projects resulting in deployable, portfolio-ready web applications.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">Full Stack Web</span>
+                <span class="tech-tag">Database Architecture</span>
+                <span class="tech-tag">Curriculum Design</span>
+                <span class="tech-tag">Capstone Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PT Satu Visi Indocreative -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Vocational Internship Facilitator & Competency Exam Support</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-briefcase"></i> PT Satu Visi Indocreative
+                  </div>
+                </div>
+                <span class="timeline-period">2021</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed training modules for IoT (Network Engineering track) and programming (Software Engineering track), mentoring hardware-software builds.</li>
+                <li>Administered official vocational competency examinations (UJIKOM), managing score database records and certificate issuance.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">IoT Development</span>
+                <span class="tech-tag">Software Engineering</span>
+                <span class="tech-tag">UJIKOM Examination</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPTIK ITB -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">GPS Installation Support Specialist</h3>
+                  <div class="timeline-company">
+                    <i class="fas fa-satellite-dish"></i> IoT Consortium PPTIK ITB
+                  </div>
+                </div>
+                <span class="timeline-period">2020</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Supported physical installation, hardware module positioning, and telematics GPS configuration across public bus fleets.</li>
+                <li>Logged and structured fleet installation verification records to ensure operational readiness and fleet tracking integrity.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">IoT Telematics</span>
+                <span class="tech-tag">GPS Hardware</span>
+                <span class="tech-tag">Fleet Verification</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Engineering Portfolio</span>
+          <h2 class="section-title">Selected <span class="gradient-text">Featured Projects</span></h2>
+          <p class="section-desc">
+            Explore software platforms, municipal digital portals, and hardware IoT innovations engineered with real-world impact.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="enterprise">Municipal & Enterprise</button>
+          <button class="filter-btn" data-filter="iot">IoT & Hardware Automation</button>
+          <button class="filter-btn" data-filter="edtech">EdTech & Startups</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- SIKIPAS -->
+          <article class="project-card" data-category="edtech enterprise">
+            <div class="project-card-header">
+              <span class="project-type-badge">EdTech / HAKI Registered</span>
+              <span class="project-featured-tag"><i class="fas fa-crown"></i> National Finalist</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">SIKIPAS (Skill Passport Information System)</h3>
+              <p class="project-desc">
+                Automated student competency recording platform functioning like a specialized LinkedIn for vocational education. Directly maps student technical skill passports to industry job requirements and streamlines report-card workflows.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-certificate"></i> Officially registered with <strong>Indonesia's Intellectual Property Office (HAKI Kemenkumham)</strong> and awarded Top 10 in FabCreation Hackathon.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">HAKI Copyright</span>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link-btn" data-cert-target data-cert-src="assets/images/cert-haki.jpg" data-cert-title="SIKIPAS - Surat Pencatatan Ciptaan (HAKI)" data-cert-desc="Official Ministry of Law and Human Rights (Kemenkumham RI) Copyright Certificate for SIKIPAS (Sistem Informasi Skill Pasport).">
+                  <i class="fas fa-shield-alt"></i> View HAKI Certificate <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- JAMURIN -->
+          <article class="project-card" data-category="iot">
+            <div class="project-card-header">
+              <span class="project-type-badge">IoT & Smart Agriculture</span>
+              <span class="project-featured-tag"><i class="fas fa-award"></i> Inovillage Top 30</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">JAMURIN (IoT Mushroom Microclimate Automation)</h3>
+              <p class="project-desc">
+                Precision automated watering and environmental monitoring device for mushroom cultivation. Controlled by NodeMCU, utilizing DHT sensors to monitor ambient temperature and substrate humidity, paired with automatic relay water pump controllers.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-hand-holding-usd"></i> Secured national grant funding and recognition under the <strong>Innovillage Social Innovation Program</strong> for tech-for-society empowerment.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">NodeMCU (ESP8266)</span>
+                <span class="tech-tag">DHT Sensors</span>
+                <span class="tech-tag">Relay Controller</span>
+                <span class="tech-tag">RESTful API</span>
+                <span class="tech-tag">Web Dashboard</span>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link-btn" data-cert-target data-cert-src="" data-cert-title="JAMURIN - IoT Mushroom Automation" data-cert-desc="<b>Project Architecture & Impact:</b><br>• NodeMCU (ESP8266) micro-controller reading real-time temperature and substrate humidity from DHT sensors.<br>• Automated solenoid relay actuation to trigger precision misting and irrigation cycles.<br>• Web dashboard API reporting telemetry data to optimize mushroom spawn yields.<br>• Selected among Top 30 Social Innovations funded by Inovillage.">
+                  <i class="fas fa-info-circle"></i> View Architecture <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- BISA Design Academy ERP -->
+          <article class="project-card" data-category="edtech enterprise">
+            <div class="project-card-header">
+              <span class="project-type-badge">EdTech / SaaS ERP</span>
+              <span class="project-featured-tag"><i class="fas fa-users"></i> 10,000+ Visits</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">BISA Design Academy ERP</h3>
+              <p class="project-desc">
+                Comprehensive digital education academy platform offering verified courses and certifications. Integrated an interactive live video conferencing module similar to Zoom, facilitating interactive learning for design and engineering students.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-chart-line"></i> Scaled to serve more than 10,000 unique visits with high-performance caching, database indexing, and seamless video streaming workflows.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Video Streaming API</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link-btn" data-cert-target data-cert-src="" data-cert-title="BISA Design Academy ERP" data-cert-desc="<b>System Highlights:</b><br>• Scalable multi-tenant academic ERP for over 10,000 active students and course participants.<br>• Built-in WebRTC video conference classrooms replacing third-party external tools.<br>• Redis caching layer minimizing database queries during traffic peaks.<br>• Automated course progress tracking and certificate generator.">
+                  <i class="fas fa-info-circle"></i> View Details <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dishubkominfo Portal -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-card-header">
+              <span class="project-type-badge">Municipal Government</span>
+              <span class="project-featured-tag" style="color: var(--accent-emerald); background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.28);">
+                <i class="fas fa-check-circle"></i> Production Live
+              </span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Dishubkominfo Municipal Public Service Portal</h3>
+              <p class="project-desc">
+                Official municipal public services portal and reporting dashboard. Streamlines departmental reporting, administrative management, and secure inter-agency data synchronization for municipal transportation and informatics governance.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-lock"></i> Engineered with Filament Admin Panel and Laravel backend, delivering 99.9% uptime, role-based access control (RBAC), and robust audit logs.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Filament PHP</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">RESTful API</span>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link-btn" data-cert-target data-cert-src="" data-cert-title="Dishubkominfo Municipal Platform" data-cert-desc="<b>Governance & Architectural Specifications:</b><br>• High-performance administrative console built with Laravel & Filament PHP.<br>• Secure RESTful endpoints facilitating inter-agency synchronization.<br>• Optimized PostgreSQL schema with automated backup protocols.<br>• 99.9% uptime SLA maintenance across public municipal services.">
+                  <i class="fas fa-info-circle"></i> View Specs <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mortgage Application System -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-card-header">
+              <span class="project-type-badge">Fintech / Enterprise</span>
+              <span class="project-featured-tag"><i class="fas fa-shield-alt"></i> Secure Workflow</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Mortgage (KPR) Application & Banking Workflow</h3>
+              <p class="project-desc">
+                End-to-end mortgage underwriting application system featuring multi-stage credit approval workflows, automated document validation, and notifications.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-clock"></i> Implemented Quartz job scheduling, Redis queue processing, and JWT-secured RESTful endpoints.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Spring Boot 3</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Quartz</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-link-btn">
+                  <i class="fas fa-university"></i> Banking & Credit Approval
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Smart Parking Management -->
+          <article class="project-card" data-category="iot">
+            <div class="project-card-header">
+              <span class="project-type-badge">IoT & Smart City</span>
+              <span class="project-featured-tag"><i class="fas fa-bolt"></i> Real-time Telemetry</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Smart Parking Management System</h3>
+              <p class="project-desc">
+                Intelligent parking slot occupancy detection utilizing ultrasonic and infrared sensor arrays linked with a real-time web dashboard for automated slot allocation and payment records.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-wifi"></i> Low-latency telemetry transmission via MQTT / WebSockets for live driver guidance.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Ultrasonic Sensors</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-link-btn">
+                  <i class="fas fa-car"></i> Smart Mobility Solution
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Automatic Face Mask & Social Distancing -->
+          <article class="project-card" data-category="iot">
+            <div class="project-card-header">
+              <span class="project-type-badge">Edge AI & Computer Vision</span>
+              <span class="project-featured-tag"><i class="fas fa-robot"></i> Embedded AI</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Automatic Face Mask & Social Distancing Detector</h3>
+              <p class="project-desc">
+                Embedded computer vision edge node detecting facial mask compliance and physical social distance violations, equipped with automated audio reminders and visual alert sirens.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-eye"></i> Deployed on edge hardware with optimized OpenCV algorithms and speaker audio synthesis.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Audio Synthesizer</span>
+                <span class="tech-tag">Edge Computing</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-link-btn">
+                  <i class="fas fa-head-side-mask"></i> Public Safety Edge AI
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Solar Powered Rover & Fire Warning -->
+          <article class="project-card" data-category="iot">
+            <div class="project-card-header">
+              <span class="project-type-badge">Hardware Robotics & Safety</span>
+              <span class="project-featured-tag"><i class="fas fa-solar-panel"></i> Clean Energy</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Solar-Powered Autonomous Rover & Fire Detection</h3>
+              <p class="project-desc">
+                Remotely controllable hazardous environment exploration rover powered by solar recharging cells, combined with an early fire and flammable gas detection warning alert system.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-fire-extinguisher"></i> Integrated flame sensors, gas smoke detection, and wireless RF teleoperation.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Arduino Nano</span>
+                <span class="tech-tag">Flame & Gas Sensors</span>
+                <span class="tech-tag">Solar PV Circuit</span>
+                <span class="tech-tag">Bluetooth / RF</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-link-btn">
+                  <i class="fas fa-cogs"></i> Autonomous Robotics
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Islamic Fashion Marketplace & POS Cashier -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-card-header">
+              <span class="project-type-badge">E-Commerce & Retail</span>
+              <span class="project-featured-tag"><i class="fas fa-barcode"></i> Barcode POS</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Islamic Fashion Marketplace & Barcode POS</h3>
+              <p class="project-desc">
+                Full-featured commercial e-commerce storefront integrated with a physical retail Point-of-Sale (POS) cashier system with real-time barcode inventory synchronization.
+              </p>
+              <div class="project-highlight-box">
+                <i class="fas fa-shopping-cart"></i> Multi-channel stock management, automated invoice printing, and payment gateway checkout.
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Barcode Scanner API</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-link-btn">
+                  <i class="fas fa-store"></i> Retail & E-Commerce
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section" id="skills" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Technical Competency</span>
+          <h2 class="section-title">Core Skills & <span class="gradient-text">Technology Stack</span></h2>
+          <p class="section-desc">
+            Extensive experience across modern web ecosystems, enterprise backend frameworks, IoT microcontrollers, and educational methodology.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Backend & Frameworks -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
+              <h3 class="skill-card-title">Backend & APIs</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fab fa-laravel text-red"></i> Laravel</span>
+              <span class="skill-pill"><i class="fas fa-sliders-h"></i> Filament Admin</span>
+              <span class="skill-pill"><i class="fas fa-leaf text-green"></i> Spring Boot 3</span>
+              <span class="skill-pill"><i class="fab fa-php"></i> PHP 8.x</span>
+              <span class="skill-pill"><i class="fab fa-java"></i> Java 21</span>
+              <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-pill"><i class="fab fa-node-js"></i> Node.js / Express</span>
+              <span class="skill-pill"><i class="fas fa-fire"></i> CodeIgniter 4</span>
+              <span class="skill-pill"><i class="fas fa-network-wired"></i> RESTful Architecture</span>
+              <span class="skill-pill"><i class="fas fa-key"></i> JWT / OAuth2</span>
+              <span class="skill-pill"><i class="fas fa-clock"></i> Quartz Scheduling</span>
+            </div>
+          </div>
+
+          <!-- Frontend & Modern Web -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+              <h3 class="skill-card-title">Frontend & Web Ecosystem</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fab fa-react"></i> Next.js / React</span>
+              <span class="skill-pill"><i class="fab fa-angular"></i> Angular</span>
+              <span class="skill-pill"><i class="fab fa-js-square"></i> TypeScript</span>
+              <span class="skill-pill"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+              <span class="skill-pill"><i class="fas fa-wind"></i> Tailwind CSS</span>
+              <span class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap 5</span>
+              <span class="skill-pill"><i class="fas fa-map-marked-alt"></i> Leaflet JS</span>
+              <span class="skill-pill"><i class="fab fa-vuejs"></i> Vuetify</span>
+              <span class="skill-pill"><i class="fas fa-sync"></i> RxJS / NgRx</span>
+              <span class="skill-pill"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <!-- Databases & Infrastructure -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+              <h3 class="skill-card-title">Databases & Cloud</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fas fa-database"></i> PostgreSQL</span>
+              <span class="skill-pill"><i class="fas fa-database"></i> MySQL / MariaDB</span>
+              <span class="skill-pill"><i class="fas fa-bolt"></i> Redis Caching</span>
+              <span class="skill-pill"><i class="fas fa-database"></i> SQLite</span>
+              <span class="skill-pill"><i class="fab fa-docker"></i> Docker Containers</span>
+              <span class="skill-pill"><i class="fab fa-linux"></i> Linux Administration</span>
+              <span class="skill-pill"><i class="fab fa-aws"></i> AWS S3 & Cloud</span>
+              <span class="skill-pill"><i class="fab fa-git-alt"></i> Git / GitHub CI</span>
+              <span class="skill-pill"><i class="fab fa-redhat"></i> Red Hat OpenShift</span>
+            </div>
+          </div>
+
+          <!-- IoT & Embedded Hardware -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-microchip"></i></div>
+              <h3 class="skill-card-title">IoT & Embedded Systems</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fas fa-microchip"></i> ESP8266 (NodeMCU)</span>
+              <span class="skill-pill"><i class="fas fa-microchip"></i> ESP32</span>
+              <span class="skill-pill"><i class="fas fa-memory"></i> Arduino Nano</span>
+              <span class="skill-pill"><i class="fas fa-satellite"></i> Telematics GPS</span>
+              <span class="skill-pill"><i class="fas fa-broadcast-tower"></i> MQTT Protocol</span>
+              <span class="skill-pill"><i class="fas fa-thermometer-half"></i> DHT & Environment Sensors</span>
+              <span class="skill-pill"><i class="fas fa-wave-square"></i> Ultrasonic Sensors</span>
+              <span class="skill-pill"><i class="fab fa-bluetooth-b"></i> Bluetooth / RF</span>
+            </div>
+          </div>
+
+          <!-- Testing, QA & Security -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-shield-virus"></i></div>
+              <h3 class="skill-card-title">Testing & Security</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fas fa-vial"></i> Playwright E2E</span>
+              <span class="skill-pill"><i class="fas fa-vial"></i> Jest</span>
+              <span class="skill-pill"><i class="fas fa-check-double"></i> JUnit 5 & Mockito</span>
+              <span class="skill-pill"><i class="fas fa-paper-plane"></i> Postman Automation</span>
+              <span class="skill-pill"><i class="fas fa-user-secret"></i> Pentesting Basics</span>
+              <span class="skill-pill"><i class="fas fa-bug"></i> Hacksplaining Security</span>
+              <span class="skill-pill"><i class="fas fa-terminal"></i> Security Scripting</span>
+            </div>
+          </div>
+
+          <!-- Pedagogy & Soft Skills -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap"><i class="fas fa-users-cog"></i></div>
+              <h3 class="skill-card-title">Education & Leadership</h3>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-pill"><i class="fas fa-chalkboard-teacher"></i> Vocational Mentorship (100+ students)</span>
+              <span class="skill-pill"><i class="fas fa-book-open"></i> Curriculum Design (RPP / SMK PK)</span>
+              <span class="skill-pill"><i class="fas fa-clipboard-check"></i> UKK & UJIKOM Examiner</span>
+              <span class="skill-pill"><i class="fas fa-handshake"></i> Industry DU/DI Synchronization</span>
+              <span class="skill-pill"><i class="fas fa-tasks"></i> Agile / Scrum Collaboration</span>
+              <span class="skill-pill"><i class="fas fa-bullhorn"></i> Technical Public Speaking</span>
+              <span class="skill-pill"><i class="fas fa-sitemap"></i> HIMA TI Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credentials, Honors & HAKI Section -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Verified Qualifications</span>
+          <h2 class="section-title">Certifications, <span class="gradient-text">Honors & Copyrights</span></h2>
+          <p class="section-desc">
+            Official intellectual property registrations, national software development championships, and accredited certificates.
+          </p>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- HAKI Certificate -->
+          <div class="credential-card">
+            <div class="cert-thumbnail-box" data-cert-target data-cert-src="assets/images/cert-haki.jpg" data-cert-title="Surat Pencatatan Ciptaan (HAKI) - SIKIPAS" data-cert-desc="Official Intellectual Property Registration from Kemenkumham RI for Computer Program 'SIKIPAS (SISTEM INFORMASI SKILL PASPORT)'.">
+              <img src="assets/images/cert-haki.jpg" alt="HAKI Certificate SIKIPAS" class="cert-thumbnail-img">
+              <div class="cert-overlay-zoom">
+                <i class="fas fa-search-plus"></i> Click to Zoom Certificate
+              </div>
+            </div>
+            <div class="cert-info">
+              <div class="cert-badge-row">
+                <span class="cert-type"><i class="fas fa-shield-alt"></i> Intellectual Property</span>
+                <span class="cert-year">Dec 2021</span>
+              </div>
+              <h3 class="cert-title">Surat Pencatatan Ciptaan (HAKI Kemenkumham RI)</h3>
+              <div class="cert-issuer">Kementerian Hukum dan Hak Asasi Manusia Republik Indonesia</div>
+              <p class="cert-meta-desc">
+                Officially protected computer software copyright (Jenis Ciptaan: Program Komputer) for <em>SIKIPAS (Sistem Informasi Skill Pasport)</em>, registered in accordance with Law No. 28 of 2014 on Copyright.
+              </p>
+              <button class="btn-view-cert" data-cert-target data-cert-src="assets/images/cert-haki.jpg" data-cert-title="Surat Pencatatan Ciptaan (HAKI) - SIKIPAS" data-cert-desc="Official Intellectual Property Registration from Kemenkumham RI for Computer Program 'SIKIPAS (SISTEM INFORMASI SKILL PASPORT)'.">
+                <i class="fas fa-expand"></i> View Official Document
+              </button>
+            </div>
+          </div>
+
+          <!-- ELINATION Juara 3 -->
+          <div class="credential-card">
+            <div class="cert-thumbnail-box" data-cert-target data-cert-src="assets/images/cert-elination.jpg" data-cert-title="Juara 3 Software Development - ELINATION" data-cert-desc="Certificate for 3rd Place in National Software Development Competition at ELINATION 2021, organized by HIMANIKA FT UNY & PERMIKOMNAS.">
+              <img src="assets/images/cert-elination.jpg" alt="ELINATION Juara 3 Certificate" class="cert-thumbnail-img">
+              <div class="cert-overlay-zoom">
+                <i class="fas fa-search-plus"></i> Click to Zoom Certificate
+              </div>
+            </div>
+            <div class="cert-info">
+              <div class="cert-badge-row">
+                <span class="cert-type" style="color: var(--accent-amber);"><i class="fas fa-trophy"></i> National Award</span>
+                <span class="cert-year">Nov 2021</span>
+              </div>
+              <h3 class="cert-title">Juara 3 Software Development – ELINATION</h3>
+              <div class="cert-issuer">Universitas Negeri Yogyakarta (HIMANIKA FT UNY) & PERMIKOMNAS</div>
+              <p class="cert-meta-desc">
+                Awarded 3rd Place nationwide at the Electronic and Informatic Competition ke-3 ("Inovasi Teknologi Untuk Menghadapi Revolusi Industri") in Software Development.
+              </p>
+              <button class="btn-view-cert" data-cert-target data-cert-src="assets/images/cert-elination.jpg" data-cert-title="Juara 3 Software Development - ELINATION" data-cert-desc="Certificate for 3rd Place in National Software Development Competition at ELINATION 2021, organized by HIMANIKA FT UNY & PERMIKOMNAS.">
+                <i class="fas fa-expand"></i> View Official Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Fab Creation Hackathon -->
+          <div class="credential-card">
+            <div class="cert-thumbnail-box" data-cert-target data-cert-src="assets/images/cert-fabcreation.jpg" data-cert-title="Certificate of Appreciation - FAB CREATION 2022" data-cert-desc="Awarded for participating as SIKIPAS Startup in the Hackathon Event of Fab Creation 2022 by Jababeka Infrastruktur, Bisa.ai, and FabLab.">
+              <img src="assets/images/cert-fabcreation.jpg" alt="Fab Creation 2022 Hackathon" class="cert-thumbnail-img">
+              <div class="cert-overlay-zoom">
+                <i class="fas fa-search-plus"></i> Click to Zoom Certificate
+              </div>
+            </div>
+            <div class="cert-info">
+              <div class="cert-badge-row">
+                <span class="cert-type"><i class="fas fa-medal"></i> Startup Hackathon</span>
+                <span class="cert-year">Nov 2022</span>
+              </div>
+              <h3 class="cert-title">Fab Creation 2022 Hackathon Finalist</h3>
+              <div class="cert-issuer">FabLab Jababeka Infrastruktur, Correctio & Bisa.ai</div>
+              <p class="cert-meta-desc">
+                Selected as a finalist and awarded Certificate of Appreciation as part of the <em>Sikipas startup</em> team at the prestigious FAB CREATION 2022 Startup Hackathon.
+              </p>
+              <button class="btn-view-cert" data-cert-target data-cert-src="assets/images/cert-fabcreation.jpg" data-cert-title="Certificate of Appreciation - FAB CREATION 2022" data-cert-desc="Awarded for participating as SIKIPAS Startup in the Hackathon Event of Fab Creation 2022 by Jababeka Infrastruktur, Bisa.ai, and FabLab.">
+                <i class="fas fa-expand"></i> View Official Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Honors List -->
+        <div class="honors-list-card">
+          <div class="skill-card-header" style="margin-bottom: 0;">
+            <div class="skill-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: var(--accent-amber);">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="skill-card-title">Additional National Recognitions & Honors</h3>
+          </div>
+
+          <div class="honors-grid">
+            <div class="honor-item">
+              <div class="honor-icon"><i class="fas fa-brain"></i></div>
+              <div class="honor-content">
+                <h5>Top 30 Selection – AI Creation</h5>
+                <p>National Artificial Intelligence Innovation Competition.</p>
+              </div>
+            </div>
+
+            <div class="honor-item">
+              <div class="honor-icon"><i class="fas fa-hands-helping"></i></div>
+              <div class="honor-content">
+                <h5>Top 30 Social Innovation – Inovillage</h5>
+                <p>National Tech-for-Society Empowerment Program for the JAMURIN IoT Project.</p>
+              </div>
+            </div>
+
+            <div class="honor-item">
+              <div class="honor-icon"><i class="fas fa-award"></i></div>
+              <div class="honor-content">
+                <h5>Top 10 Finalist – Fabcreation at FabLab Jababeka</h5>
+                <p>Correctio Startup Hackathon National Level for SIKIPAS.</p>
+              </div>
+            </div>
+
+            <div class="honor-item">
+              <div class="honor-icon"><i class="fas fa-user-graduate"></i></div>
+              <div class="honor-content">
+                <h5>Graduated with Honors (Predikat Pujian)</h5>
+                <p>Bachelor of Informatics Engineering, GPA 3.70 / 4.00, Universitas Mayasari Bakti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaking & Leadership Section -->
+    <section class="section" id="speaking" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Knowledge Sharing</span>
+          <h2 class="section-title">Speaking Engagements & <span class="gradient-text">Workshops</span></h2>
+          <p class="section-desc">
+            Sharing technical knowledge on embedded electronics, web development, cybersecurity, and modern software engineering career roadmaps.
+          </p>
+        </div>
+
+        <div class="speaking-grid">
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-microchip"></i></div>
+            <div>
+              <h4 class="speaking-title">"Tinkercad Project: Door Buzzer Ultrasonic Sensor"</h4>
+              <p class="speaking-desc">Hands-on embedded hardware simulation and sensor circuit workshop for electronics learners.</p>
+            </div>
+          </div>
+
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-user-secret"></i></div>
+            <div>
+              <h4 class="speaking-title">"Introduction to Pentesting with Hacksplaining"</h4>
+              <p class="speaking-desc">Interactive session introducing web security fundamentals, common vulnerabilities, and defensive principles.</p>
+            </div>
+          </div>
+
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-road"></i></div>
+            <div>
+              <h4 class="speaking-title">"Developer Scope & Career Roadmap"</h4>
+              <p class="speaking-desc">Mentorship talk guiding students through software engineering tracks, tech stacks, and portfolio preparation.</p>
+            </div>
+          </div>
+
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <h4 class="speaking-title">"Angrytools CSS Advance Generator"</h4>
+              <p class="speaking-desc">Frontend styling workshop showcasing modern CSS generators, glassmorphism, and responsive layouts.</p>
+            </div>
+          </div>
+
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-industry"></i></div>
+            <div>
+              <h4 class="speaking-title">Seminar: "Industrial Revolution 4.0 Technologies"</h4>
+              <p class="speaking-desc">Plenary speaker on the convergence of IoT, Cloud Computing, and Artificial Intelligence in modern industries.</p>
+            </div>
+          </div>
+
+          <div class="speaking-card">
+            <div class="speaking-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <h4 class="speaking-title">Head of Department – HIMA TI</h4>
+              <p class="speaking-desc">Universitas Mayasari Bakti (2022–2023). Spearheaded technical training, community events, and student welfare.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get in Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Impactful</span></h2>
+          <p class="section-desc">
+            Have a project, municipal digital initiative, educational collaboration, or speaking opportunity? Let's connect!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-circle">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h5>Email Address</h5>
+                  <a href="mailto:hafizachmadr@gmail.com">hafizachmadr@gmail.com</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="hafizachmadr@gmail.com" title="Copy email address">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-circle" style="color: #25d366; background: rgba(37, 211, 102, 0.12);">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h5>WhatsApp / Phone</h5>
+                  <a href="https://wa.me/6282318107081" target="_blank" rel="noopener noreferrer">+62 823-1810-7081</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="+6282318107081" title="Copy phone number">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-circle" style="color: #0077b5; background: rgba(0, 119, 181, 0.12);">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h5>LinkedIn Profile</h5>
+                  <a href="https://linkedin.com/in/hafizahmadr" target="_blank" rel="noopener noreferrer">linkedin.com/in/hafizahmadr</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="https://linkedin.com/in/hafizahmadr" title="Copy LinkedIn URL">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-circle">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h5>GitHub Repository</h5>
+                  <a href="https://github.com/hafiz162001" target="_blank" rel="noopener noreferrer">github.com/hafiz162001</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="https://github.com/hafiz162001" title="Copy GitHub URL">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-circle" style="color: var(--accent-rose); background: rgba(244, 63, 94, 0.12);">
+                  <i class="fas fa-map-pin"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h5>Location</h5>
+                  <span>Tasikmalaya, West Java, Indonesia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Send a Direct Message</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Fill out this form to send an inquiry directly to Hafiz Achmad Ramdani.
+            </p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address *</label>
+                <input type="email" id="form-email" class="form-control" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="e.g. Collaboration on Municipal App / Speaking Invitation">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message *</label>
+                <textarea id="form-message" class="form-control" placeholder="Write your message or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <div id="form-alert" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">
+            Hafiz <span class="gradient-text">Achmad Ramdani</span>, S.Kom.
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Software Engineer & IT Educator specializing in public digital services, full-stack web platforms, and applied IoT solutions.
+          </p>
+        </div>
+
+        <div>
+          <div style="font-weight: 700; margin-bottom: 0.75rem; font-size: 0.95rem;">Quick Navigation</div>
+          <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.9rem; color: var(--text-secondary);">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#credentials" class="nav-link">Credentials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Hafiz Achmad Ramdani. All Rights Reserved. Built with modern semantic HTML5, CSS3, and JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate & Document Lightbox Modal -->
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body">
+        <img src="" alt="" class="modal-image-preview" id="modal-img">
+        <h3 id="modal-title" style="font-size: 1.28rem; font-weight: 800; margin-bottom: 0.6rem;"></h3>
+        <div id="modal-desc" style="font-size: 0.94rem; color: var(--text-secondary); line-height: 1.65;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Interactive Toast Notification Element -->
+  <div id="toast-notification" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
